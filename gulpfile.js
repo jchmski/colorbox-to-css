@@ -90,4 +90,4 @@ gulp.task('htmlmin', function () {
 
 gulp.task('default', gulp.series('dev'));
 gulp.task('bundle', gulp.series('inject-css', 'inject-js', 'htmlmin'));
-gulp.task('deploy', gulp.series('copy', 'css', 'js', 'inject-css', 'inject-js', 'htmlmin'));
+gulp.task('deploy', gulp.series('css', 'js', 'copy', 'inject-css', 'inject-js', 'htmlmin'));
