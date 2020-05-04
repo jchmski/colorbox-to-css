@@ -1,6 +1,12 @@
 /* http://www.colorbox.io/#steps=8#hue_start=247#hue_end=247#hue_curve=linear#sat_start=4#sat_end=33#sat_curve=linear#sat_rate=150#lum_start=96#lum_end=25#lum_curve=linear#lock_hex=4d4871#minor_steps_map=0 */
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap');
+@font-face {
+  font-family: 'Overpass Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Overpass Mono SemiBold'), local('OverpassMono-SemiBold'), url(https://fonts.gstatic.com/s/overpassmono/v5/_Xm3-H86tzKDdAPa-KPQZ-AC3vCQo_CXBg.woff2) format('woff2');
+}
 
 * {
 	box-sizing: border-box;
