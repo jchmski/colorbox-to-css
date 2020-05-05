@@ -129,6 +129,7 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(4, 1fr) 50px;
 	grid-gap: var(--spacing);
+	border-radius: var(--border-radius);
 	padding: calc(var(--spacing) * 1.25) calc(var(--spacing) * 2) calc(var(--spacing) * 1.75);
 }
 
