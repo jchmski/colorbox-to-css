@@ -11,19 +11,27 @@
 <body>
 	<div class="container">
 		<div>
-			<h1>Colorbox.io CSS Generator</h1>
-			<p>Build your palette on <a href="https://colorbox.io" title="Colorbox.io color palette generator">colorbox.io</a>, then paste the JSON below to create CSS variables</p>
 			<div class="parser">
-				<div>
+				<div class="title">
+					<h1>Colorbox CSS Generator</h1>
+					<div class="steps">
+						<ol>
+							<li>Build your color palette on <a href="http://scolorbox.io" target="_BLANK" title="Colorbox.io color palette generator">colorbox.io</a><img src="/images/external.svg" /></li>
+							<li>Paste the JSON below and click Generate</li>
+							<li>Copy the CSS variables into your project</li>
+						</ol>
+					</div>
+				</div>
+				<div class="form-wrapper">
 					<div class="input-wrapper">
-						<label for="prefix">Variable Prefix</label>
-						<input id="prefix" type="text" name="prefix" value="purple" />
+						<label for="prefix">Color Prefix<span>(e.g. blue)</span></label>
+						<input id="prefix" type="text" name="prefix" />
 					</div>
 					<div class="textarea-wrapper">
 						<label for="json">RGB / Hex JSON</label>
 						<textarea id="json" name="json"></textarea>
 					</div>
-					<button>Create Variables</button>
+					<button><span>Generate</span></button>
 					<div class="right-wrapper">
 						<label class="banner">CSS output</label>
 						<div class="variables-wrapper">

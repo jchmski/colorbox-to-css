@@ -1,5 +1,5 @@
 document.querySelector('button').addEventListener('click', () => {
-	const prefix = document.querySelector('input').value;
+	const prefix = document.querySelector('input').value.replace(/[^A-z0-9]/g, '');
 	const variables = document.querySelector('.variables')
 	let i = 1;
 
