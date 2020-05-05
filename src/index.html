@@ -15,25 +15,38 @@
 				<div class="title">
 					<h1>Colorbox CSS Generator</h1>
 					<div class="steps">
-						<ol>
+						<ul>
 							<li>Build your color palette on <a href="http://colorbox.io" target="_BLANK" title="Colorbox.io color palette generator">colorbox.io</a><img src="/images/external.svg" /></li>
 							<li>Paste the JSON below and click Generate</li>
 							<li>Copy the CSS variables into your project</li>
-						</ol>
+						</ul>
 					</div>
 				</div>
 				<div class="form-wrapper">
 					<div class="input-wrapper">
-						<label for="prefix">Color Prefix<span>(e.g. blue)</span></label>
-						<input id="prefix" type="text" name="prefix" />
+						<label for="prefix">Variable Prefix<span></span></label>
+						<input id="prefix" type="text" name="prefix" value="blue" />
 					</div>
 					<div class="textarea-wrapper">
 						<label for="json">RGB / Hex JSON</label>
-						<textarea id="json" name="json"></textarea>
+						<textarea id="json" name="json">{
+    "0": "#f6fbff",
+    "5": "#e6f4fd",
+    "10": "#d7ecfc",
+    "20": "#b6dbf5",
+    "30": "#93c6eb",
+    "40": "#71afdb",
+    "50": "#4f93c4",
+    "60": "#3076a7",
+    "70": "#185987"
+}</textarea>
 					</div>
 					<button><span>Generate</span></button>
 					<div class="right-wrapper">
-						<label class="banner">CSS output</label>
+						<div class="variables-title">
+							<label class="banner">CSS output</label>
+							<div class="copy">copy</div>
+						</div>
 						<div class="variables-wrapper">
 							<div class="variables"></div>
 						</div>
