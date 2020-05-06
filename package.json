@@ -1,5 +1,5 @@
 {
-  "name": "colorbox-css-generator",
+  "name": "colorbox-to-css",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jchmski/colorbox-css-generator.git"
+    "url": "git+https://github.com/jchmski/colorbox-to-css.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jchmski/colorbox-css-generator/issues"
+    "url": "https://github.com/jchmski/colorbox-to-css/issues"
   },
-  "homepage": "https://github.com/jchmski/colorbox-css-generator#readme",
+  "homepage": "https://github.com/jchmski/colorbox-to-css#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
