@@ -15,14 +15,6 @@
   src: local('Fira Mono Medium'), local('FiraMono-Medium'), url(https://fonts.gstatic.com/s/firamono/v8/N0bS2SlFPv1weGeLZDto1d3HnvfU.woff2) format('woff2');
 }
 
-@font-face {
-  font-family: 'Overpass Mono';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Overpass Mono SemiBold'), local('OverpassMono-SemiBold'), url(https://fonts.gstatic.com/s/overpassmono/v5/_Xm3-H86tzKDdAPa-KPQZ-AC3vCQo_CXBg.woff2) format('woff2');
-}
-
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -89,13 +81,13 @@ body::after {
 }
 
 h1 {
-	font-size: 3.75rem;
+	font-size: 4.5rem;
 	font-weight: inherit;
 	text-shadow: 0 1px 1px #030303, 0 2px 1px #030303;
 	text-align: center;
 	line-height: 1;
 	color: #fff;
-	margin-bottom: calc(var(--spacing) / 1.5);
+	margin-bottom: calc(var(--spacing) / 2.5);
 }
 
 .steps {
