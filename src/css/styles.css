@@ -143,7 +143,7 @@ img {
 	grid-gap: var(--spacing);
 	border-bottom-left-radius: var(--border-radius);
 	border-bottom-right-radius: var(--border-radius);
-	padding: calc(var(--spacing) * 1.25) calc(var(--spacing) * 1.5);
+	padding: var(--spacing) calc(var(--spacing) * 1.25);
 }
 
 .form-wrapper > div {
