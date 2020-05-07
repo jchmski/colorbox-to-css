@@ -1,11 +1,11 @@
-/* http://www.colorbox.io/#steps=8#hue_start=247#hue_end=247#hue_curve=linear#sat_start=4#sat_end=33#sat_curve=linear#sat_rate=150#lum_start=96#lum_end=25#lum_curve=linear#lock_hex=4d4871#minor_steps_map=0 */
+/* http://www.colorbox.io/#steps=8#hue_start=247#hue_end=247#hue_curve=linear#sat_start=1#sat_end=33#sat_curve=linear#sat_rate=150#lum_start=96#lum_end=25#lum_curve=linear#lock_hex=4d4871#minor_steps_map=0 */
 
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/quicksand/v20/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkCEv58a-wg.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/quicksand/v20/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkM0o58a-wg.woff2) format('woff2');
 }
 
 @font-face {
@@ -26,16 +26,16 @@
 }
 
 :root {
-	--font-weight: 600;
+	--font-weight: 500;
 	--mono-weight: 500;
 	--border-radius: 6px;
-	--spacing: 32px;
-    --purple-100: #e8e6f5;
-    --purple-200: #d5d3e7;
-    --purple-300: #c3c0da;
-    --purple-400: #a19dc0;
-    --purple-500: #827ea6;
-    --purple-600: #66618b;
+	--spacing: 48px;
+    --purple-100: #f2f1f5;
+    --purple-200: #dddce7;
+    --purple-300: #cac8da;
+    --purple-400: #a6a2c0;
+    --purple-500: #8580a6;
+    --purple-600: #67628b;
     --purple-700: #4d4871;
     --purple-800: #373258;
     --purple-900: #242040;
@@ -57,7 +57,7 @@ body::after {
 	width: 100%;
 	height: 100%;
 	top: 0;
-	background: hsla(248, 33%, 4%, 0.5);
+	background: hsla(248, 33%, 4%, 0.3);
 	content: '';
 }
 
@@ -71,23 +71,24 @@ body::after {
 
 .parser {
 	width: 100%;
-	background: hsla(248, 33%, 28%, 0.4);
-	backdrop-filter: blur(4px);
+	background: hsla(248, 33%, 22%, 0.9);
 	border-radius: var(--border-radius);
+	box-shadow: 0 0 25px -5px #131313;
 }
 
 .title {
-	padding: calc(var(--spacing) * 1.25) calc(var(--spacing) * 3);
+	padding: var(--spacing);
 }
 
 h1 {
 	font-size: 4.5rem;
 	font-weight: inherit;
-	text-shadow: 0 1px 1px #030303, 0 2px 1px #030303;
+	text-shadow: 0 1px 1px #131313, 0 2px 1px #131313,  0 3px 1px #131313;
 	text-align: center;
 	line-height: 1;
+	letter-spacing: 0.1rem;
 	color: #fff;
-	margin-bottom: calc(var(--spacing) / 2.5);
+	margin-bottom: calc(var(--spacing) / 3);
 }
 
 .steps {
@@ -101,7 +102,7 @@ ul {
 	font-size: 1.15rem;
 	list-style: none;
 	list-style-position: inside;
-	text-shadow: 0 1px 1px #030303, 0 2px 1px #030303;
+	text-shadow: 0 1px 1px #131313, 0 2px 1px #131313;
 	text-align: left;
 	counter-reset: list;
 	margin: 0 auto;
@@ -131,28 +132,28 @@ a {
 img {
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 0 3px 4px;
+	margin: 0 0 3px 5px;
 }
 
 .form-wrapper {
 	display: grid;
 	background: hsla(0 0% 0% / 0.2);
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(4, 1fr) 50px;
+	grid-template-rows: repeat(4, 1fr);
 	grid-gap: var(--spacing);
 	border-bottom-left-radius: var(--border-radius);
 	border-bottom-right-radius: var(--border-radius);
-	padding: calc(var(--spacing) * 1.25) calc(var(--spacing) * 2) calc(var(--spacing) * 1.75);
+	padding: calc(var(--spacing) * 1.25) calc(var(--spacing) * 1.5);
 }
 
 .form-wrapper > div {
-	width: 360px;
+	width: 336px;
 }
 
 label {
 	display: block;
 	height: 2rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	text-shadow: 0 1px 1px #030303;
 	letter-spacing: 0.05em;
 	color: #fff;
@@ -175,7 +176,7 @@ input, textarea {
 	display: block;
 	width: 100%;
 	height: calc(100% - 2rem);
-	background: #fff;
+	background: var(--purple-100);
 	font-family: "Fira Mono", "Overpass Mono", monospace;
 	font-weight: var(--mono-weight);
 	font-size: 1rem;
@@ -183,7 +184,7 @@ input, textarea {
 	line-height: 1.6;
 	border-radius: var(--border-radius);
 	border: none;
-	transition: box-shadow 200ms ease;
+	transition: box-shadow 100ms linear;
 	will-change: box-shadow;
 	padding: 1.25rem 1rem 1rem;
 }
@@ -192,8 +193,17 @@ textarea {
 	line-height: 1.25;
 }
 
+input:focus, textarea:focus, button:focus {
+	outline: 0;
+}
+
+input:focus, textarea:focus {
+	background: #fff;
+	box-shadow: 0 0 0 3px var(--purple-500);
+}
+
 button {
-	display: block;
+	display: none;
 	width: 100%;
 	background: linear-gradient(var(--purple-700), var(--purple-800));
 	grid-area: 5 / 1 / 6 / 2;
@@ -217,16 +227,8 @@ button:active {
 	background: var(--purple-800);
 }
 
-input:focus, textarea:focus, button:focus {
-	outline: 0;
-}
-
-input:focus, textarea:focus {
-	box-shadow: 0 0 0 4px var(--purple-500);
-}
-
 .right-wrapper {
-	grid-area: 1 / 2 / 6 / 2;
+	grid-area: 1 / 2 / 5 / 2;
 }
 
 .variables-title {
@@ -254,7 +256,7 @@ input:focus, textarea:focus {
 
 .variables {
 	height: 100%;
-	background: #fff;
+	background: var(--purple-100);
 	font-family: "Fira Mono", "Overpass Mono", monospace;
 	font-weight: var(--mono-weight);
 	font-size: 1rem;
