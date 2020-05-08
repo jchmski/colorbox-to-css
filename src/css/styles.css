@@ -71,7 +71,7 @@ body::after {
 
 .parser {
 	width: 100%;
-	background: hsla(248, 33%, 22%, 0.9);
+	background: hsla(248, 33%, 29%, 0.9);
 	border-radius: var(--border-radius);
 	box-shadow: 0 0 25px -5px #131313;
 }
@@ -137,7 +137,7 @@ img {
 
 .form-wrapper {
 	display: grid;
-	background: hsla(0 0% 0% / 0.2);
+	background: hsla(0 0% 0% / 0.3);
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(4, 1fr);
 	grid-gap: var(--spacing);
