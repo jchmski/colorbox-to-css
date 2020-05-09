@@ -72,6 +72,18 @@ body::after {
 	margin: auto;
 }
 
+.github-link {
+	display: block;
+	position: fixed;
+	bottom: 15px;
+	right: 22px;
+	z-index: 1;
+}
+
+.github-link a {
+	border-bottom: none;
+}
+
 .parser {
 	width: 100%;
 	background: hsla(248, 33%, 29%, 0.9);
@@ -86,7 +98,7 @@ body::after {
 h1 {
 	font-size: 4.5rem;
 	font-weight: inherit;
-	text-shadow: 0 1px 1px #131313, 0 2px 1px #131313,  0 3px 1px #131313;
+	text-shadow: 0 1px 1px #131313, 0 2px 1px #131313;
 	text-align: center;
 	line-height: 1;
 	letter-spacing: 0.1rem;
