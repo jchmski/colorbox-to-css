@@ -8,13 +8,6 @@
   src: url(https://fonts.gstatic.com/s/quicksand/v20/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkM0o58a-wg.woff2) format('woff2');
 }
 
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Fira Mono Medium'), local('FiraMono-Medium'), url(https://fonts.gstatic.com/s/firamono/v8/N0bS2SlFPv1weGeLZDto1d3HnvfU.woff2) format('woff2');
-}
-
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -144,7 +137,7 @@ a {
 	border-bottom: 1px solid #fff;
 }
 
-img {
+.external-icon {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 0 3px 5px;
@@ -189,7 +182,7 @@ input, textarea {
 	width: 100%;
 	height: calc(100% - 2rem);
 	background: var(--purple-100);
-	font-family: "Fira Mono", "Overpass Mono", monospace;
+	font-family: monospace;
 	font-weight: var(--mono-weight);
 	font-size: 1rem;
 	color: inherit;
@@ -244,7 +237,7 @@ input:focus, textarea:focus {
 .variables {
 	height: 100%;
 	background: var(--purple-100);
-	font-family: "Fira Mono", "Overpass Mono", monospace;
+	font-family: monospace;
 	font-weight: var(--mono-weight);
 	font-size: 1rem;
 	color: var(--purple-900);
