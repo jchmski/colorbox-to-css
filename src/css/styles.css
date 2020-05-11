@@ -184,7 +184,7 @@ input, textarea {
 	background: var(--purple-100);
 	font-family: monospace;
 	font-weight: var(--mono-weight);
-	font-size: 1rem;
+	font-size: 1.25rem;
 	color: inherit;
 	line-height: 1.6;
 	border-radius: var(--border-radius);
@@ -239,7 +239,7 @@ input:focus, textarea:focus {
 	background: var(--purple-100);
 	font-family: monospace;
 	font-weight: var(--mono-weight);
-	font-size: 1rem;
+	font-size: 1.25rem;
 	color: var(--purple-900);
 	border-radius: var(--border-radius);
 	white-space: pre-wrap;
