@@ -3,7 +3,7 @@ const textarea = document.querySelector('textarea');
 
 const cssify = () => {
 	const prefix = document.querySelector('input').value.replace(/[^A-z0-9]/g, '');
-	const variables = document.querySelector('.variables')
+	const variables = document.querySelector('.variables');
 	let i = 1;
 
 	if (prefix.length < 1) return;
@@ -18,12 +18,19 @@ const cssify = () => {
 	variables.innerHTML = `<div>:root {</div>`;
 
 	for (const color in colors) {
+		if (!colors[color].match(/^#[A-f0-9]{6}$/)) {
+			variables.innerHTML = `<div class="error">JSON format error</div>`;
+			return;
+		}
+
 		const div = document.createElement('div');
 		div.innerHTML = `<div>    --${prefix}-${(i++ * 100)}: ${colors[color]}; <span style="background: ${colors[color]}"></span></div>`;
 		variables.appendChild(div);
 	}
 
 	variables.innerHTML += `<div>}</div>`;
+
+	variables.classList.add('visible');
 }
 
 document.addEventListener('DOMContentLoaded', () => cssify());

@@ -109,13 +109,11 @@ h1 {
 	display: inline-block;
 	color: #fff;
 	font-size: 1.15rem;
+	line-height: 1.7;
+	letter-spacing: 0.06em;
 	text-shadow: 0 1px 1px #131313, 0 2px 1px #131313;
 	text-align: left;
 	margin: 0 auto;
-}
-
-p {
-	margin-bottom: 8px;
 }
 
 ul {
@@ -123,11 +121,6 @@ ul {
 	list-style-position: inside;
 	counter-reset: list;
 	max-width: 400px;
-}
-
-li {
-	line-height: 1.7;
-	letter-spacing: 0.06em;
 }
 
 li::before {
@@ -243,6 +236,7 @@ input:focus, textarea:focus {
 }
 
 .variables {
+	display: none;
 	height: 100%;
 	background: var(--purple-100);
 	font-family: "Roboto Mono", monospace;
@@ -251,6 +245,11 @@ input:focus, textarea:focus {
 	color: var(--purple-900);
 	white-space: pre-wrap;
 	padding: 1rem;
+}
+
+
+.variables.visible {
+	display: block;
 }
 
 .variables div {
