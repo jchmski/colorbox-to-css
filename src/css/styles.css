@@ -1,5 +1,7 @@
 /* http://www.colorbox.io/#steps=8#hue_start=247#hue_end=247#hue_curve=linear#sat_start=1#sat_end=33#sat_curve=linear#sat_rate=150#lum_start=96#lum_end=25#lum_curve=linear#lock_hex=4d4871#minor_steps_map=0 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
@@ -100,24 +102,31 @@ h1 {
 }
 
 .steps {
-	display: block;
 	text-align: center;
 }
 
-ul {
+.steps > div {
 	display: inline-block;
 	color: #fff;
 	font-size: 1.15rem;
-	list-style: none;
-	list-style-position: inside;
 	text-shadow: 0 1px 1px #131313, 0 2px 1px #131313;
 	text-align: left;
-	counter-reset: list;
 	margin: 0 auto;
 }
 
+p {
+	margin-bottom: 8px;
+}
+
+ul {
+	list-style: none;
+	list-style-position: inside;
+	counter-reset: list;
+	max-width: 400px;
+}
+
 li {
-	line-height: 1.9;
+	line-height: 1.7;
 	letter-spacing: 0.06em;
 }
 
@@ -182,16 +191,16 @@ input, textarea {
 	width: 100%;
 	height: calc(100% - 2rem);
 	background: var(--purple-100);
-	font-family: monospace;
+	font-family: "Roboto Mono", monospace;
 	font-weight: var(--mono-weight);
-	font-size: 1.25rem;
+	font-size: 1rem;
 	color: inherit;
-	line-height: 1.6;
+	line-height: 1.5;
 	border-radius: var(--border-radius);
 	border: none;
 	transition: box-shadow 100ms linear;
 	will-change: box-shadow;
-	padding: 1.25rem 1rem 1rem;
+	padding: 1rem;
 }
 
 textarea {
@@ -230,20 +239,18 @@ input:focus, textarea:focus {
 
 .variables-wrapper {
 	height: calc(100% - 2rem);
-	border-radius: var(--border-radius);
 	overflow: hidden;
 }
 
 .variables {
 	height: 100%;
 	background: var(--purple-100);
-	font-family: monospace;
+	font-family: "Roboto Mono", monospace;
 	font-weight: var(--mono-weight);
-	font-size: 1.25rem;
+	font-size: 1rem;
 	color: var(--purple-900);
-	border-radius: var(--border-radius);
 	white-space: pre-wrap;
-	padding: 1.25rem;
+	padding: 1rem;
 }
 
 .variables div {
