@@ -163,8 +163,8 @@ a {
 
 label {
 	display: block;
-	height: 2rem;
-	line-height: 2rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
 	font-size: 1.1rem;
 	text-shadow: 0 1px 1px #030303;
 	letter-spacing: 0.05em;
@@ -182,8 +182,7 @@ label {
 input, textarea {
 	display: block;
 	width: 100%;
-	height: calc(100% - 2rem);
-	background: var(--purple-100);
+	height: calc(100% - 2.1rem);
 	font-family: "Roboto Mono", monospace;
 	font-weight: var(--mono-weight);
 	font-size: 1rem;
@@ -198,6 +197,7 @@ input, textarea {
 
 textarea {
 	line-height: 1.25;
+	resize: none;
 }
 
 input:focus, textarea:focus, button:focus {
@@ -206,7 +206,7 @@ input:focus, textarea:focus, button:focus {
 
 input:focus, textarea:focus {
 	background: #fff;
-	box-shadow: 0 0 0 3px var(--purple-500);
+	box-shadow: 0 0 0 4px var(--purple-500);
 }
 
 .right-wrapper {
@@ -231,7 +231,7 @@ input:focus, textarea:focus {
 }
 
 .variables-wrapper {
-	height: calc(100% - 2rem);
+	height: calc(100% - 2.1rem);
 	overflow: hidden;
 }
 
@@ -243,6 +243,7 @@ input:focus, textarea:focus {
 	font-weight: var(--mono-weight);
 	font-size: 1rem;
 	color: var(--purple-900);
+	border-left: 4px solid var(--purple-500);
 	white-space: pre-wrap;
 	padding: 1rem;
 }

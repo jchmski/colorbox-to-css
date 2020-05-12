@@ -8,8 +8,8 @@ ColorBox ([colorbox.io](http://colorbox.io)) is a color tool created by the desi
 ColorBox makes it easy to build a beautiful color palette, but doesn't make it easy to use those colors in your web project. This tool bridges the gap by allowing you to convert the export from ColorBox directly into CSS variables.
 
 ## How does ColorBox to CSS work?
-1. Build your color palette on colorbox.io
-2. Go to [Colorbox to CSS](https://colorboxtocss.dev)
-3. Choose a variable prefix
-4. Paste your JSON color palette
-5. Copy the CSS variables into your project!
+Build your color palette on colorbox.io, then
+1. Go to [Colorbox to CSS](https://colorboxtocss.dev)
+2. Choose a variable prefix
+3. Paste your Hex JSON color palette
+4. Copy CSS variables into your project!
