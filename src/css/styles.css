@@ -112,8 +112,6 @@ h1 {
 .steps {
 	grid-area: 2 / 1 / 5 / 2;
 	color: #fff;
-	font-size: 1.1rem;
-	line-height: 1.7;
 	letter-spacing: 0.06em;
 	text-shadow: 0 1px 1px #131313, 0 2px 1px #131313;
 	margin-top: 2.1rem;
@@ -123,6 +121,12 @@ ul {
 	list-style: none;
 	list-style-position: inside;
 	counter-reset: list;
+}
+
+li {
+	font-size: 1.1rem;
+	line-height: 1;
+	margin-bottom: calc(var(--spacing) / 4);
 }
 
 li::before {
@@ -193,7 +197,7 @@ input:focus, textarea:focus, button:focus {
 
 input:focus, textarea:focus {
 	background: #fff;
-	box-shadow: 0 0 0 4px var(--purple-500);
+	box-shadow: 0 0 0 3px var(--purple-500);
 }
 
 .right-wrapper {
@@ -225,7 +229,7 @@ input:focus, textarea:focus {
 .variables {
 	display: none;
 	height: 100%;
-	background: var(--purple-100);
+	background: #fff;
 	font-family: "Roboto Mono", monospace;
 	font-weight: var(--mono-weight);
 	font-size: 1rem;
